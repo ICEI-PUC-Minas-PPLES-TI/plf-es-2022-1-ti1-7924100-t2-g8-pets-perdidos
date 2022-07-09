@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de busca</title>
+    <link rel="stylesheet" href="CDI.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="container">
+            <div class="menu">
+               <div class="row">
+                    <div class="span12">
+                        <div class="head">
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="span6">
+                                        <h1 class="muted"><img src="./img/logo.png"></h1>
+                                   </div>
+                                    <div class="span4 offset2" style="margin-top:15px;">
+                                        <button onclick="window.location = '../login/login.html'" class="botao" type="button" id="ola">Login/Cadastre-se</button>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="navbar">
+                      <div class="navbar-inner">
+                          <div class="container">
+                              <ul class="nav">
+                                  <li class="nav-item">
+                                      <a href="../main_page_FindMe/index.html">Início</a>
+                                  </li>
+          
+                                  <li class="nav-item">
+                                      <a href="../cadastro_informacao/CDI1.html">Perdi Meu Pet</a>
+                                  </li>
+          
+                                  <li class="nav-item">
+                                      <a href="../cadastro_informacao/CDI1.html">Encontrei um Pet</a>
+                                  </li>
+    
+                                  <li class="nav-item">
+                                    <a href="#colaboradores">Como Funciona?</a>
+                                    </li>
+          
+                                  <li class="nav-item">
+                                      <a href="#sobre">Sobre nós</a>
+                                  </li>
+                              </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+    <div class="container">
+        <div class="border">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Procure pelo Dono</h1>
+                    </div>
+                    <div class="bsalvar">
+                        <button id="bInfo" onclick="save()">Salvar</button><br>
+                    </div>
+                </div>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label for="regiao">Região Encontrada</label>
+                        <input type="text" id="campoRegiao"><br>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Raça">Raça</label>
+                        <input type="text" id="campoRaça"><br>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="Nome do pet">Nome do pet</label>
+                        <input type="text" id="campoNomePet"><br>
+                    </div>
+                   
+                    <div class="input-box">
+                        <label for="Sexo">Sexo do Animal</label>
+                        <input type="text" id="campoSexo"><br>
+                    </div>
+                   
+                    <div class="input-box">
+                        <label for="Endereco">Email para contato</label>
+                        <input type="email" id="campoEmail"><br>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Numero">Número para contato</label>
+                        <input type="tel" id="campoNumero"><br>
+                    </div>
+
+                        <div class="input-box">
+                            <label for="Descricao">Descrição</label>
+                            <input type="text" id="campoDescricao"><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="Cor">Cor do animal</label>
+                            <input type="text" id="CorDoAnimal"><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="foto">Url da foto do animal</label>
+                            <input type="url" id="fotoAnimal"><br>
+                        </div>
+
+                    
+
+
+
+            </form>
+        </div>
+    </div>
+
+    <button id="bCarregar">Carregar</button>
+    <div id="tela">
+    </div>
+
+</body>
+<script src="CDI.js"></script>
+
+</html>
